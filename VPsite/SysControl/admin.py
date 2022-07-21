@@ -1,5 +1,4 @@
 from django.contrib import admin
-from SysControl.models import Person, Course, Grade
 
 
 # for User 
@@ -65,13 +64,3 @@ class EntryAdmin(admin.ModelAdmin):
 
 admin.site.register(Entry, EntryAdmin)
 
-#__________________________________________________________________________________________
-@admin.register(Person)
-class PersonAdmin(admin.ModelAdmin):
-    pass
-@admin.register(Course)
-class CourseAdmin(admin.ModelAdmin):
-    pass
-@admin.register(Grade)
-class GradeAdmin(admin.ModelAdmin):
-    pass
